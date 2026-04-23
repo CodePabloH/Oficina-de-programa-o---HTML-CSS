@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro — Krypton FIT</title>
+  <link rel="stylesheet" href="/css/cadastro.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+  <div class="container">
+   <a href="../index.html" class="logo">
+  <img src="../imagens/kryptonfit.png" alt="Krypton Fit" class="logo-img">
+</a>
+  
+      <ul class="nav-links">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../pages/catalogo.html">Planos</a></li>
+        <li><a href="../pages/cadastro.html" class="ativo">Cadastro</a></li>
+        <li><a href="../pages/login.html" class="nav-cta">Entrar</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PÁGINA DE CADASTRO -->
+  <div class="auth-pagina">
+    <div class="form-wrap">
+
+      <div class="form-titulo">
+       <h1 class="titulo-krypton">
+  KRYPTON<span>FIT</span>
+</h1>
+        <h2>Criar Conta</h2>
+        <p>Primeira semana grátis em qualquer plano 🎉</p>
+      </div>
+
+      <form action="#" method="post">
+
+        <!-- NOME COMPLETO -->
+        <div class="form-grupo">
+          <label for="nome">Nome Completo</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Seu nome completo"
+            required
+          />
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form-grupo">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seu@email.com"
+            required
+          />
+        </div>
+
+        <!-- TELEFONE -->
+        <div class="form-grupo">
+          <label for="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(62) 9 0000-0000"
+          />
+        </div>
+
+        <!-- DATA NASC. + SEXO -->
+        <div class="form-linha">
+          <div class="form-grupo">
+            <label for="nascimento">Data de Nascimento</label>
+            <input
+              type="date"
+              id="nascimento"
+              name="nascimento"
+            />
+          </div>
+          <div class="form-grupo">
+            <label for="sexo">Sexo</label>
+            <select id="sexo" name="sexo">
+              <option value="" disabled selected>Selecione</option>
+              <option value="m">Masculino</option>
+              <option value="f">Feminino</option>
+              <option value="o">Prefiro não dizer</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- PLANO DE INTERESSE -->
+        <div class="form-grupo">
+          <label for="plano">Plano de Interesse</label>
+          <select id="plano" name="plano">
+            <option value="" disabled selected>Escolha um plano</option>
+            <option value="basico">Básico — R$ 89/mês</option>
+            <option value="intermediario">Intermediário — R$ 149/mês</option>
+            <option value="premium">Premium — R$ 229/mês</option>
+            <option value="nao-sei">Ainda não sei</option>
+          </select>
+        </div>
+
+        <!-- SENHA -->
+        <div class="form-grupo">
+          <label for="senha">Senha</label>
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Mínimo 8 caracteres"
+            required
+          />
+        </div>
+
+        <!-- CONFIRMAR SENHA -->
+        <div class="form-grupo">
+          <label for="senha-confirm">Confirmar Senha</label>
+          <input
+            type="password"
+            id="senha-confirm"
+            name="senha-confirm"
+            placeholder="Repita sua senha"
+            required
+          />
+        </div>
+
+        <!-- BOTÃO -->
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primario" style="width: 100%; font-size: 1.1rem; padding: 16px;">
+            Criar Conta Grátis
+          </button>
+        </div>
+
+      </form>
+
+      <div class="form-divisor">ou</div>
+
+      <p class="form-rodape">
+        Já tem uma conta?
+        <a href="login.html">Faça login aqui</a>
+      </p>
+
+      <p style="font-size: 0.78rem; color: var(--cinza); text-align: center; margin-top: 20px; line-height: 1.6;">
+        Ao criar uma conta você concorda com nossos
+        <a href="#" style="color: var(--cinza-claro);">Termos de Uso</a>
+        e
+        <a href="#" style="color: var(--cinza-claro);">Política de Privacidade</a>.
+      </p>
+
+    </div>
+  </div>
+
+</body>
+</html>
